@@ -1,0 +1,11 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "stdio.h": "c",
+        "conio.h": "c",
+        "DAY_5_3.C": "cpp",
+        "DAY_5_2.C": "cpp",
+        "BILL.C": "cpp"
+    }
+}
