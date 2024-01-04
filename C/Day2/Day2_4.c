@@ -5,7 +5,7 @@
 
 int main() {
     double radius,area;
-    //clrscr();
+    clrscr();
     printf("Enter the radius of the circle: ");
     scanf("%lf", &radius);
 

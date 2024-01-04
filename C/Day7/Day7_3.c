@@ -2,8 +2,8 @@
 #include <conio.h>
 
 int main(){
-    //clrscr();
     int num,sum=0,i,num2=12;
+    clrscr();
 
     printf("Enter Num: ");
     scanf("%d",&num);

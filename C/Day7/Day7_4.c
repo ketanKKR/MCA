@@ -2,8 +2,8 @@
 #include <conio.h>
 
 int main(){
-    //clrscr();
     int num,sum=0,i,start,end,final;
+    clrscr();
 
     printf("Enter Starting Limit: ");
     scanf("%d",&start);

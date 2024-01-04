@@ -5,6 +5,7 @@
 int main(){
 	int num=0,sum=0,numlen,i;
     char strnum[20];
+    clrscr();
 
     printf("Enter Number: ");
     scanf("%d",&num);

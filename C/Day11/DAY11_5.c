@@ -5,7 +5,7 @@
 int main(){
 	char str[100],revStr[100];
 	int strLen,i,result;
-	//clrscr();
+	clrscr();
 
 	printf("Enter a Sring: ");
 	gets(str);

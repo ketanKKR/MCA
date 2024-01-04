@@ -9,6 +9,7 @@ int main(){
        long l = 1000000;
        short s = 32;
        double d = 320000.54;
+       clrscr();
 
        printf("\nInt = %d",i);
        printf("\nFloat = %.2f",f);

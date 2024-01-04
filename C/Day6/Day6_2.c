@@ -3,6 +3,7 @@
 
 int main(){
 	int num=0,factorial=0,i;
+    clrscr();
 
     printf("Enter Number: ");
     scanf("%d",&num);

@@ -4,6 +4,7 @@
 int main(){
     char stdName[50],address[100],email[100];
     long long int mobile;
+    clrscr();
     
     printf("Enter Student Name: ");
     fgets(stdName, sizeof(stdName), stdin);

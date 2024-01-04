@@ -3,7 +3,7 @@
 int main()
 {
 	  int data,sk,en,dn;
-	  //clrscr();
+	  clrscr();
 	  printf("enter data:");
 	  scanf("%d",&data);
 	  printf("enter secret key:");

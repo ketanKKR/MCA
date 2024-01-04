@@ -5,6 +5,7 @@
 int main(){
 	int num=0,numLen,i=0;
     char strNum[20],reverseNum[20]="1";
+    clrscr();
 
     printf("Enter Number: ");
     scanf("%d",&num);

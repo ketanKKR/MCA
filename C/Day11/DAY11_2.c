@@ -2,8 +2,8 @@
 #include <conio.h>
 
 int main(){
-	int i=0,j=0,matrix1[3][3],matrix2[3][3],matrixSub[3][3],index=1;
-	//clrscr();
+	int i=0,j=0,matrix1[3][3],matrix2[3][3],matrixSum[3][3],index=1;
+	clrscr();
 	for(i=0; i<3; i++){
 		for(j=0; j<3; j++){
 			printf("Enter Element[%d][%d] for Matrix1: ",i,j,index);
@@ -30,15 +30,15 @@ int main(){
 	for(i=0; i<3; i++){
 		for(j=0; j<3; j++){
 			printf("%d ",matrix2[i][j]);
-            matrixSub[i][j] = matrix1[i][j] - matrix2[i][j];
+            matrixSum[i][j] = matrix1[i][j] + matrix2[i][j];
 		}
 		printf("\n");
 	}
 
-    printf("\nSubtraction Of Above Matrixs:\n");
+    printf("\nSum Of Above Matrixs:\n");
 	for(i=0; i<3; i++){
 		for(j=0; j<3; j++){
-			printf("%d ",matrixSub[i][j]);
+			printf("%d ",matrixSum[i][j]);
 		}
 		printf("\n");
 	}

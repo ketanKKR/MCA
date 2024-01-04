@@ -3,7 +3,7 @@
 
 int main(){
     int i,j,num=1;
-    //clrscr();
+    clrscr();
     for(i=0; i<=5; i++){
         num=1;
         for(j=0; j<i; j++){

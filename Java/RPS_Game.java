@@ -26,31 +26,31 @@ public class RPS_Game {
             System.out.println("Computer->Rock");
             System.out.println("You win this round!");
         }
-        if(comChoice==1 && myChoice==3){
+        else if(comChoice==1 && myChoice==3){
             comScore++;
             System.out.print("You->Scissors ");
             System.out.println("Computer->Rock");
             System.out.println("Computer win this round!");
         }
-        if(comChoice==2 && myChoice==1){
+        else if(comChoice==2 && myChoice==1){
             comScore++;
             System.out.print("You->Rock ");
             System.out.println("Computer->Paper");
             System.out.println("Computer win this round!");
         }
-        if(comChoice==2 && myChoice==3){
+        else if(comChoice==2 && myChoice==3){
             myScore++;
             System.out.print("You->Scissors ");
             System.out.println("Computer->Paper");
             System.out.println("You win this round!");
         }
-        if(comChoice==3 && myChoice==1){
+        else if(comChoice==3 && myChoice==1){
             myScore++;
             System.out.print("You->Rock ");
-            System.out.println("Computer->scissors");
+            System.out.println("Computer->Scissors");
             System.out.println("You win this round!");
         }
-        if(comChoice==3 && myChoice==2){
+        else(comChoice==3 && myChoice==2){
             comScore++;
             System.out.print("You->Paper ");
             System.out.println("Computer->Scissors");
@@ -79,7 +79,7 @@ public class RPS_Game {
             System.out.println("Game over!\nBetter luck next time!");
         }
         else{
-            System.out.println("Crongrtulation you win this Game!");
+            System.out.println("Congratulations you win this Game!");
         }
     }  
 }

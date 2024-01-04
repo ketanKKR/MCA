@@ -3,7 +3,7 @@
 
 int main(){
 	int marks[10],i;
-	//clrscr();
+	clrscr();
 
 	for(i=0; i<10; i++){
 		printf("Enter Marks of Student%d: ",i+1);
