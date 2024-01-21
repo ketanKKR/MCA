@@ -2,33 +2,39 @@
 #include <conio.h>
 
 void menu(){
-    printf("Add...1");
-    printf("Modify...2");
-    printf("Delete...3");
-    printf("Exit...4");
+    printf("\nAdd.......1");
+    printf("\nModify....2");
+    printf("\nDisplay...3");
+    printf("\nDelete....4");
+    printf("\nExit......5");
     
 }
 
 int main(){
-    int ch,arra[100],top=-1;
+    int ch,stack[100],top=-1;
     //clrscr();
     do{
-        printf("Enter Your choice: ");
+        menu();
+        printf("\n\nEnter Your choice: ");
         scanf("%d",&ch);
 
         switch(ch){
             case 1://Add
+                printf("\nEnter Value: ");
+                scanf("%s",&stack[top++]);
             break;
             case 2://Modify
             break;
-            case 3://Delete
+            case 3://Display
             break;
-            case 4://Exit
+            case 4://Delete
+            break;
+            case 5://Exit
             break;
             default:
                 printf("\nPlease enter a valid choice!");
             break;
         }
-    }while(ch!=4);
+    }while(ch!=5);
     //getch();
 }
