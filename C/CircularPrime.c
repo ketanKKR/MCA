@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <conio.h>
+#include <math.h>
+
+typedef enum Bool{false,true}Bool;
 
 int fildLength(int num){
     int len=0;
@@ -10,19 +13,27 @@ int fildLength(int num){
     return len;
 }
 
-int primeCheck(int num){
-    int i;
-    if(num==1){
-        return 0;
+Bool primeCheck(int num){
+    int i,sqRoot;
+    if(num==1 || num==0){
+        return false;
+    }
+    if(num==2){
+        return true;
+    }
+    if(num%2==0){
+        return false;
     }
     else{
-        for(i=2; i<num; i++){
+        sqRoot=sqrt(num);
+        for(i=3; i<sqRoot; i++){
             if(num%i==0){
-                return 0;//Not Prime
+                return false;
             }
         }
     }
-    return 1;//Prime
+
+    return true;
 }
 
 int swap(int num,short len){
@@ -32,37 +43,29 @@ int swap(int num,short len){
     }
     temp = num%10;
     num /= 10;
-    if(len==2){
-        temp*=10;
-    }
-    else if(len==3){
-        temp*=100;
-    }
-    else if(len==4){
-        temp*=1000;
-    }
+    temp*=pow(10,len-1);
 
     return temp+num;
 }
 
-int circularPrime(int num,short len){
+Bool circularPrime(int num,short len){
     int i;
     if(len==1){
-        return 0;//Not Circular Prime
+        return false;
     }
-    else if(primeCheck(num)==1){
+    else if(primeCheck(num)==true){
         for(i=1; i<len; i++){
             num=swap(num,len);
-            if(primeCheck(num)==0){
-                return 0;//Not Circular Prime
+            if(primeCheck(num)==false){
+                return false;
             }
         }
     }
     else{
-        return 0;//Not Circular Prime
+        return false;
     }
 
-    return 1;//Circular Prime
+    return true;
 }
 
 int main(){
@@ -70,10 +73,10 @@ int main(){
     short len;
     //clrscr();
     
-    for(i=2; i<100; i++){
+    for(i=2; i<1000; i++){
         len=fildLength(i);
-        if(circularPrime(i,len)==1){
-            printf("\n%d",i);
+        if(circularPrime(i,len)==true){
+            printf("%5d",i);
         }
     }
     getch();
