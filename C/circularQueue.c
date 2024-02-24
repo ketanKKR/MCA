@@ -74,7 +74,7 @@ void display(){
         printf("\nQueue:");
         index=front;
         for(i=0; i<count; i++){
-            printf("%5d",queue[i]);
+            printf("%5d",queue[index]);
             index++;
             if(index==SIZE)
                 index=0;
